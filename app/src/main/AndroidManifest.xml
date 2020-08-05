@@ -33,6 +33,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Light" >
+
+        <meta-data
+            android:name="app_uuid"
+            android:value="3840818e-9579-4f20-801d-c53067ef694e"/>
+
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -40,8 +45,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.EVOTOR" />
             </intent-filter>
+
+            <meta-data
+                android:name="ru.evotor.launcher.BACKGROUND_COLOR"
+                android:value="#0E76A3" />
 
             <meta-data
                 android:name="android.app.shortcuts"
